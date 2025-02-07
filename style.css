@@ -1,0 +1,37 @@
+html{
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F7F7F7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    margin: 30px 0px 0px 30px;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: "Shadows Into Light", serif;
+}
+
+.tooltip{
+    background: #F1F1F1;
+    border-radius: 2px;
+    color: black;
+    outline: solid black 1px; 
+    display: block;
+    font-size: 14px;
+    max-width: 250px;
+    padding: 5px 10px;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    z-index: 9999;
+    visibility: hidden;
+    overflow: visible;
+}
+
