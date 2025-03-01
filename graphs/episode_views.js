@@ -7,6 +7,7 @@ async function drawBars(){
     const yAccessor = d => +d.us_views_millions
     const xAccessor = d => `S${d.season} E${d.episode}`
 
+    console.log(data)
     
     // //chart dimensions 
     let dimensions = { 
@@ -66,6 +67,7 @@ async function drawBars(){
         .style("position", "absolute")
         .style("visibility", "hidden")
 
+   
     //bars
     const bars = bounds.selectAll("rect")
         .data(data)
@@ -83,7 +85,7 @@ async function drawBars(){
                 .attr("stroke","purple")
                 .attr("stroke-width", 1)
             tooltip.style("visibility", "visible")
-                .text(`Season: ${d.season}\nEpisode: ${d.episode}- ${d.title}\nViews: ${d.us_views_millions}M`)
+                .text(`Season: ${d.season}\nEpisode: ${d.episode}- ${d.title}\nViews: ${d.us_views_millions}M\nAir Date: ${d.air_date}`)
             
         })
         .on("mousemove", function(event,d) {
